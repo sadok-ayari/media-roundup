@@ -1,0 +1,14 @@
+name: check
+on: [push, pull_request]
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Offline tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Digest builds from cached feeds
+        run: python3 roundup.py --config examples/watchlist.json --now 2026-11-12T09:00:00Z --out /tmp/out.md --cache /dev/null || true

@@ -1,0 +1,55 @@
+{
+  "title": "MEDIA ROUNDUP",
+  "window_hours": 24,
+  "classification": "",
+  "feeds": [
+    {
+      "outlet": "Wire A",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+    },
+    {
+      "outlet": "Wire B",
+      "url": "https://www.theguardian.com/world/rss"
+    }
+  ],
+  "topics": [
+    {
+      "name": "Security",
+      "keywords": [
+        "conflict",
+        "strike",
+        "security",
+        "military"
+      ]
+    },
+    {
+      "name": "Economy",
+      "keywords": [
+        "economy",
+        "trade",
+        "investment",
+        "budget",
+        "market"
+      ]
+    },
+    {
+      "name": "Diplomacy",
+      "keywords": [
+        "minister",
+        "talks",
+        "summit",
+        "agreement",
+        "treaty"
+      ]
+    },
+    {
+      "name": "Climate",
+      "keywords": [
+        "climate",
+        "emissions",
+        "energy transition",
+        "cop"
+      ]
+    }
+  ]
+}
